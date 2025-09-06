@@ -1,0 +1,413 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "1154927a-557d-4693-82d4-bca3a4e65d30",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello, World!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello, World!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "b20dc01d-b463-48f9-9456-dfeaf9c0c3c0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2+7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "0dd6ed65-b336-4117-b94d-0f1cd72d2c82",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Odd\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Enter a number: \"))\n",
+    "if num % 2 == 0:\n",
+    "    print(\"Even\")\n",
+    "else:\n",
+    "    print(\"Odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "68119770-f1a0-4415-8357-83facc6dd587",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter three numbers:  3 45 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Largest: 45\n"
+     ]
+    }
+   ],
+   "source": [
+    "a, b, c = map(int, input(\"Enter three numbers: \").split())\n",
+    "if a >= b and a >= c:\n",
+    "    print(\"Largest:\", a)\n",
+    "elif b >= a and b >= c:\n",
+    "    print(\"Largest:\", b)\n",
+    "else:\n",
+    "    print(\"Largest:\", c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "d4b1d36f-da7e-4272-9523-5c3fe7c49e31",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5 x 1 = 5\n",
+      "5 x 2 = 10\n",
+      "5 x 3 = 15\n",
+      "5 x 4 = 20\n",
+      "5 x 5 = 25\n",
+      "5 x 6 = 30\n",
+      "5 x 7 = 35\n",
+      "5 x 8 = 40\n",
+      "5 x 9 = 45\n",
+      "5 x 10 = 50\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter a number: \"))\n",
+    "for i in range(1, 11):\n",
+    "    print(f\"{n} x {i} = {n*i}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "c6d7bcf3-a3ff-4f76-b2df-59c8f9fc01df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Factorial: 120\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter a number: \"))\n",
+    "fact = 1\n",
+    "i = 1\n",
+    "while i <= n:\n",
+    "    fact *= i\n",
+    "    i += 1\n",
+    "print(\"Factorial:\", fact)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "f0e8779d-056d-4e81-b975-1572ce7810fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  123\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reversed number: 321\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter a number: \"))\n",
+    "rev = 0\n",
+    "while n > 0:\n",
+    "    rev = rev * 10 + n % 10\n",
+    "    n //= 10\n",
+    "print(\"Reversed number:\", rev)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "f8ab4afd-d63c-4dd9-abf2-7c30991baea6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string:  aakanksha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number of vowels: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter a string: \").lower()\n",
+    "count = 0\n",
+    "for ch in s:\n",
+    "    if ch in \"aeiou\":\n",
+    "        count += 1\n",
+    "print(\"Number of vowels:\", count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "6110c464-a904-41f2-8277-60aafaba93fc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  56\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not Prime\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter a number: \"))\n",
+    "if n > 1:\n",
+    "    for i in range(2, int(n**0.5) + 1):\n",
+    "        if n % i == 0:\n",
+    "            print(\"Not Prime\")\n",
+    "            break\n",
+    "    else:\n",
+    "        print(\"Prime\")\n",
+    "else:\n",
+    "    print(\"Not Prime\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "005a20a7-39d9-49e3-96fd-ae0de98c46af",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number of terms:  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 1 1 2 3 "
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter number of terms: \"))\n",
+    "a, b = 0, 1\n",
+    "count = 0\n",
+    "while count < n:\n",
+    "    print(a, end=\" \")\n",
+    "    a, b = b, a + b\n",
+    "    count += 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "7bce89ff-b2fe-45a7-ae58-e87cabe90302",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word:  madam\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Palindrome\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter a word: \")\n",
+    "if s == s[::-1]:\n",
+    "    print(\"Palindrome\")\n",
+    "else:\n",
+    "    print(\"Not Palindrome\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "b13ebe0e-3628-4a3a-9935-5b98bd5d9b57",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter numbers separated by space:  6 8 4 6 9 3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Largest element: 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst = list(map(int, input(\"Enter numbers separated by space: \").split()))\n",
+    "largest = lst[0]\n",
+    "for num in lst:\n",
+    "    if num > largest:\n",
+    "        largest = num\n",
+    "print(\"Largest element:\", largest)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "cf34a383-7051-4b0b-b0e5-780425c06a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:  45\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sum of digits: 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter a number: \"))\n",
+    "s = 0\n",
+    "while n > 0:\n",
+    "    s += n % 10\n",
+    "    n //= 10\n",
+    "print(\"Sum of digits:\", s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "757ef73a-4091-478e-9a90-09fb65063c37",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:anaconda3]",
+   "language": "python",
+   "name": "conda-env-anaconda3-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
